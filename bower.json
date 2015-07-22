@@ -1,0 +1,16 @@
+{
+  "name": "hexagon",
+  "version": "0.0.1",
+  "authors": [
+    "edwardparker <edwardfedorafan@gmail.com>"
+  ],
+  "description": "A html template using html5 css5 and bootstrap as a framework to build a sexy template",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
