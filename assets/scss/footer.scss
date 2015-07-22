@@ -1,0 +1,8 @@
+.footer {
+  @include defaul-padd(100px 0);
+  background-color: #ddd;
+  &-h {
+    text-transform: uppercase;
+    color: $font-color;
+  }
+}

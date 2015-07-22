@@ -25,6 +25,9 @@ var hexagon = angular.module('hexagon',[
 
 }])
 
-.controller('hexagonCtrl', function () {
-
-});
+.controller('hexagonCtrl', [
+  '$scope',
+  function ($scope) {
+    $scope.header = ['Home', 'About', 'Works', 'Services', 'Blog', 'Contact']
+  }
+]);

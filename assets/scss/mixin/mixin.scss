@@ -1,5 +1,4 @@
-@mixin text-overflow () {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: break-word;
-}
+@import 'padding.scss';
+@import 'text-overflow.scss';
+@import 'transition.scss';
+@import 'font.scss';
