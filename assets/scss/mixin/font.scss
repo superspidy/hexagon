@@ -1,8 +1,14 @@
-@function calculateRem($size) {
+@function calculateRem($size: $font-base-size) {
   $remSize: $size / 16px;
   @return $remSize * 1rem;
 }
 
-@mixin font-size($size: 16px) {
-  font-size: calculateRem($size);
+@mixin font-size($size: $font-base-size) {
+  
+  @media screen and (max-width: 300px) {
+    font-size: calculateRem($size);
+  }
+  @media screen and (max-width: 992px) {
+    font-size: calculateRem($size);
+  }
 }

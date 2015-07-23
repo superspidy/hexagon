@@ -1,0 +1,29 @@
+@mixin default-padd($padding: 15px) {
+  padding: $padding;
+}
+
+.no-padd-left {
+  padding-left: 0;
+}
+
+.no-padd-right {
+  padding-right: 0;
+}
+
+.no-padd-top {
+  padding-top: 0;
+}
+
+.no-padd-bottom {
+  padding-bottom: 0;
+}
+
+.no-padd-lr {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-padd-tb {
+  padding-top: 0;
+  padding-bottom: 0;
+}

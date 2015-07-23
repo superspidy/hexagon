@@ -1,0 +1,26 @@
+<carousel class="carousel-banner" interval="myInterval" no-wrap="noWrapSlides">
+  <slide ng-repeat="slide in slides" active="slide.active">
+    <img ng-src="{{slide.image}}" style="margin:auto;">
+    <div class="carousel-caption">
+      <h3>
+        <span class="normal-text">clean</span><span class="bold-text"> &</span>
+      </h3>
+      <h2 class="bold-text">Modern clean</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae pariatur fugiat ad adipisci quod perspiciatis aperiam ipsa eligendi, deleniti minus.</p>
+      <a href="" class="read-more">more</a>
+    </div>
+  </slide>
+</carousel>
+
+<section class="fashion-container">
+  <div class="row">
+    <div class="col-md-6 no-padd-right hexa-af-right">
+      <figure><img src="assets/img/fashion-left.jpg" alt="" class="img-responsive"></figure>
+      <div class="hexagon-white left"></div>
+    </div>
+    <div class="col-md-6 no-padd-left hexa-af-left">
+      <figure><img src="assets/img/fashion-right.jpg" alt="" class="img-responsive"></figure>
+      <div class="hexagon-white right"></div>
+    </div>
+  </div>
+</section>

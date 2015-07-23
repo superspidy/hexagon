@@ -15,6 +15,45 @@
 
 .navbar {
   margin-bottom: 0;
-  background-color: $theme-color;
+  background-color: $bg-color;
   border-radius: 0;
+}
+
+
+.navbar-brand {
+  position: relative;
+  width: 50px; 
+  height: 28.87px;
+  margin: 14.43px 0;
+  border-left: solid 5px;
+  border-right: solid 5px;
+  @include transition(0.25s);
+  &:before,
+  &:after {
+    content: "H";
+    position: absolute;
+    z-index: 1;
+    width: 35.36px;
+    height: 35.36px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 2.3223px;
+  }
+  &:before {
+    top: -17.6777px;
+    border-top: solid 7.0711px;
+    border-right: solid 7.0711px ;
+  }
+  &:after {
+    bottom: -17.6777px;
+    border-bottom: solid 7.0711px;
+    border-left: solid 7.0711px;
+  }
+  &:hover {
+    background-color: white;
+    &:before, &:after { background-color: white; }
+    @include rotate(90deg);
+  }
 }

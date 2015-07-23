@@ -3,3 +3,23 @@ body {
   background-color: $bg-color;
   // background-color: $bg-color;
 }
+
+.hexagon-white {
+  @include hexagon(white);
+  &.left {
+    position: absolute;
+    left: 15px;
+    bottom: 25px;
+    &:after {
+      border-left: 50px solid white;
+    }
+  }
+  &.right {
+    position: absolute;
+    right: 15px;
+    bottom: 25px;
+    &:after {
+      border-right: 50px solid white;
+    }
+  }
+}

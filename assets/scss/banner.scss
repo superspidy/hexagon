@@ -1,0 +1,49 @@
+.carousel-banner {
+  .normal-text {
+    @include font-size(35px);
+  }
+
+  .bold-text {
+    @include font-size(50px);
+  }
+  .carousel-indicators {
+    display: none;
+  }
+
+  h3,
+  h2 {
+    text-align: left;
+  }
+  p {
+    width: 50%; 
+  }
+}
+
+.hexa-after {
+  content: '';
+  background-color: white;
+  position: absolute;
+  height: 100px;
+  width: 60px;
+  display: block;
+  bottom: -51px;
+}
+
+.hexa-af {
+  &-left {
+    overflow: hidden;
+    &:after {
+      @extend .hexa-after;
+      left: -1px;
+      transform: rotate(-60deg);
+    }
+  }
+  &-right {
+    overflow: hidden;
+    &:after {
+      @extend .hexa-after;
+      right: -1px;
+      transform: rotate(60deg);
+    }
+  }
+}

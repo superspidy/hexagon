@@ -1,0 +1,6 @@
+img {
+  @include transition();
+  &:hover {
+    opacity: 0.8;
+  }
+}

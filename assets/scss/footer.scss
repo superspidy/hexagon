@@ -1,6 +1,6 @@
 .footer {
-  @include defaul-padd(100px 0);
-  background-color: #ddd;
+  @include default-padd(100px 0);
+  background-color: $lightest-bg-color;
   &-h {
     text-transform: uppercase;
     color: $font-color;

@@ -1,0 +1,4 @@
+.about-section {
+  @include default-padd(50px 0);
+  background-color: $light-bg-color;
+}

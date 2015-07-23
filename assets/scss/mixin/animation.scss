@@ -4,3 +4,10 @@
        -o-transition: all $time ease-in-out;
   transition: all $time ease-in-out;
 }
+
+
+@mixin rotate($deg: 360deg) {
+  -webkit-transform: rotate($deg);
+      -ms-transform: rotate($deg);
+          transform: rotate($deg);
+}
